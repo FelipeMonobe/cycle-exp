@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "@cycle/dom": "^12.2.5",
+    "@cycle/http": "^11.0.1",
     "@cycle/xstream-run": "^3.1.0",
     "xstream": "^6.3.0"
   },
@@ -16,12 +17,13 @@
     "eslint-config-google": "^0.6.0",
     "eslint-loader": "^1.5.0",
     "node-libs-browser": "^1.0.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   },
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js -p",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --colors --compress"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --colors --compress"
   },
   "author": "",
   "license": "ISC"
